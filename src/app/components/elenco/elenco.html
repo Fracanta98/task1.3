@@ -1,0 +1,88 @@
+<!-- #searchBox è il collegamento a ViewChild -->
+<!-- <div fd-form-item>
+    <label fd-form-label [colon]="true">Cerca </label>
+    <input fd-form-control type="text" #searchBox placeholder="Sales Order..." />
+</div>  -->
+<!-- <input #searchBox type="text" placeholder="cerca...."> -->
+<!-- <div fd-form-item>
+    <label fd-form-label for="fd-input-group-search-1" id="fd-input-group-search-label-1">Search input</label>
+    <fd-input-group
+        glyph="decline"
+        glyphAriaLabel="Clear"
+        placeholder="Search"
+        [button]="true"
+        [disabled]="false"
+        [(ngModel)]="searchTerm"
+        (addOnButtonClicked)="searchTerm = 'SalesOrder'"
+    >
+    </fd-input-group>
+    <small>Search term: {{ searchTerm }}</small>
+</div> -->
+
+ <input fd-form-control type="text" id="input-1" placeholder="Cerca SalesOrder" />
+<table fd-table aria-label="Default">
+    <thead fd-table-header>
+        <tr fd-table-row>
+            <th fd-table-cell>SalesOrder</th>
+            <th fd-table-cell>SalesOrderItem</th>
+            <th fd-table-cell>auart</th>      
+            <th fd-table-cell>erdat</th>      
+            <th fd-table-cell>netwr</th>      
+            <th fd-table-cell>waerk</th>      
+            <th fd-table-cell>bstnk</th>      
+            <th fd-table-cell>objnr</th>      
+            <th fd-table-cell>vbtyp</th>      
+            <th fd-table-cell>vkorg</th>      
+            <th fd-table-cell>vtweg</th>      
+            <th fd-table-cell>spart</th>      
+            <th fd-table-cell>matnr</th>      
+            <th fd-table-cell>kwmeng</th>      
+            <th fd-table-cell>vrkme</th>      
+            <th fd-table-cell>kdmat</th>      
+            <th fd-table-cell>zz070</th>    
+            <th fd-table-cell>lfsta</th>    
+            <th fd-table-cell>abgru</th>    
+            <th fd-table-cell>ShipToCustomer</th>    
+            <th fd-table-cell>ShipToCustomerName</th>    
+            <th fd-table-cell>QtaDelivered</th>  
+            <th fd-table-cell>StatusText</th>  
+            <th fd-table-cell>language</th>  
+            <th fd-table-cell>RequestDate</th>  
+            <th fd-table-cell>StatusSO</th>  
+            <th fd-table-cell>Advancement</th>  
+            <th fd-table-cell>Lfsta_s</th>
+        </tr>
+    </thead>
+    <tbody fd-table-body>
+            <tr *ngFor="let ord of elenco" fd-table-row>
+                <td fd-table-cell>{{ord.SalesOrder}}</td>
+                <td fd-table-cell>{{ord.SalesOrderItem}}</td>
+                <td fd-table-cell>{{ord.auart}}</td>
+                <td fd-table-cell>{{ord.erdat}}</td>
+                <td fd-table-cell>{{ord.netwr}}</td>
+                <td fd-table-cell>{{ord.waerk}}</td>
+                <td fd-table-cell>{{ord.bstnk}}</td>
+                <td fd-table-cell>{{ord.objnr}}</td>
+                <td fd-table-cell>{{ord.vbtyp}}</td>
+                <td fd-table-cell>{{ord.vkorg}}</td>
+                <td fd-table-cell>{{ord.vtweg}}</td>
+                <td fd-table-cell>{{ord.spart}}</td>
+                <td fd-table-cell>{{ord.matnr}}</td>
+                <td fd-table-cell>{{ord.kwmeng}}</td>
+                <td fd-table-cell>{{ord.vrkme}}</td>
+                <td fd-table-cell>{{ord.kdmat}}</td>
+                <td fd-table-cell>{{ord.zz070}}</td>
+                <td fd-table-cell>{{ord.lfsta}}</td>
+                <td fd-table-cell>{{ord.abgru}}</td>
+                <td fd-table-cell>{{ord.ShipToCustomer}}</td>
+                <td fd-table-cell>{{ord.ShipToCustomerName}}</td>
+                <td fd-table-cell>{{ord.QtaDelivered}}</td>
+                <td fd-table-cell>{{ord.StatusText}}</td>
+                <td fd-table-cell>{{ord.language}}</td>
+                <td fd-table-cell>{{ord.RequestDate}}</td>
+                <td fd-table-cell>{{ord.StatusSO}}</td>
+                <td fd-table-cell>{{ord.Advancement}}</td>
+                <td fd-table-cell>{{ord.Lfsta_s}}</td>
+            </tr>
+    </tbody>
+</table>

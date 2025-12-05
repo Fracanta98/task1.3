@@ -1,0 +1,30 @@
+export class Order {   
+    SalesOrder?: string ;
+    SalesOrderItem?: string;
+    auart?:string;
+    erdat?: string;
+    netwr?:number;
+    waerk?: string;
+    bstnk?: string;
+    objnr?: string;
+    vbtyp?:string;
+    vkorg?:string;
+    vtweg?:string;
+    spart?:string;
+    matnr?:string;
+    kwmeng?: number;
+    vrkme?:string;
+    kdmat?:string;
+    zz070?:string;
+    lfsta?:string;
+    abgru?:string;
+    ShipToCustomer?: string;
+    ShipToCustomerName?:string;
+    QtaDelivered?:number;
+    StatusText?:string;
+    language?:string;
+    RequestDate?:string | null;
+    StatusSO?:string;
+    Advancement?:number;
+    Lfsta_s?:string;
+}
